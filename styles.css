@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    background: #fff;
+    min-height: 200vh;
+}
+/* #general
+{
+    overflow: hidden;
+} */
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 100000;
+}
+header.sticky
+{
+    padding: 5px 100px;
+    background: #f33289;
+}
+header .logo
+{
+    position: relative;
+    font-weight: 700;
+    color: #f33289;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+header ul
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li
+{
+    position: relative;
+    list-style: none;
+}
+header ul li a
+{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #f33289;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+}
+.banner
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(medicine-doctor-holding-red-heart-shape-hand-medical-icon-network-connection-modern-virtual-screen-interface-service-mind-99681240.jpg);
+    background-size: cover;
+    opacity: 0.5;
+}
+header.sticky .logo,
+header.sticky ul li a
+{
+    color: #fff;
+}
+/* .welcome_section */
+h1
+{
+    color: #f33289;
+    text-decoration: none;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 25px;
+    position: relative;
+    top: 100px;
+    left: 8%;
+}
+h1 span
+{
+    font-weight: 800;
+}
+h6
+{
+    position: relative;
+    top: 115px;
+    left: 8%;
+    font-size: 15px;
+    color: #000;
+    font-weight: 500;
+}
+section p
+{
+    position: relative;
+    top: 130px;
+    left: 8%;
+    font-size: 12px;
+    line-height: 20px;
+    opacity: 0.6;
+    width: 40%;
+}
+section a
+{
+    position: relative;
+    top: 160px;
+    left: 8%;
+    font-weight: bold;
+    font-size: 15px;
+    color: #fff;
+    background: #f33289;
+    width: 160px;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+.theme-btn:hover, .theme-btn:focus, .theme-btn:active
+{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.services h2
+{
+    color: #f33289;
+    text-decoration: none;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 25px;
+    position: relative;
+    top: 250px;
+    left: 8%;
+}
+.services h2 span
+{
+    font-weight: 800;
+}
+.services ol
+{
+    position: relative;
+    top: 275px;
+    left: 8%;
+}
+.services a
+{
+    position: relative;
+    top: 300px;
+    left: 8%;
+}
+#testimonials
+{
+    position: relative;
+    top: 370px;
+}
+.testimonials
+{
+    background: linear-gradient(90deg, #fff 0%, #f33289 100%);
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.testimonials h3
+{
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.testimonials h4
+{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 300;
+}
+.cards
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    margin: 0 auto;
+}
+.card
+{
+    width: auto;
+    height: auto;
+    border-radius: 15px;
+    margin: 7px;
+    padding: 40px 40px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 10px 20px 25px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+}
+.card img
+{
+    height: 90px;
+    width: 90px;
+    border: 2px solid #f2f2f2;
+    border-radius: 50%;
+    position: absolute;
+    top: -40px;
+    left: 20px;
+}
+.card p
+{
+    font-size: 16px;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    width: auto;
+    top: 20px;
+    line-height: 20px;
+}
+.card h7
+{
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+.card h8
+{
+    color: #333;
+    font-weight: 400;
+    font-size: 16px;
+}
+.card i
+{
+    font-size: 60px;
+    position: relative;
+    bottom: 20px;
+    right: 25px;
+    color: #b2bec3;
+}
+.card:hover
+{
+    transform: scale(1.4);
+    color: #333;
+    background: #fff;
+    z-index: 100000;
+}
+@media(max-width: 768px)
+{
+    .cards
+    {
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .card */
+    {
+        margin: 40px 0;
+    }
+}
+.contact
+{
+    position: relative;
+    top: 370px;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(pink.webp);
+    background-size: cover;
+}
+.contact .content
+{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h10
+{
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+}
+.contact .content p
+{
+    font-weight: 300;
+    color: #fff; 
+    top: auto;
+    left: 30%;
+}
+.container
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contactInfo
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactInfo .box
+{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container .contactInfo .box .icon
+{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.container .contactInfo .box .text
+{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;  
+}
+.container .contactInfo .box .text h11
+{
+    font-weight: 500;
+    color: #f33289;
+}
+.container .contactInfo .box .text p
+{
+    top: auto;
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+}
+.contactForm
+{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+.contactForm h12
+{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.contactForm .inputBox
+{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactForm .inputBox span
+{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span
+{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactForm .inputBox input[type="submit"]
+{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+@media (max-width: 991px)
+{
+    .contact
+    {
+        padding: 50px;
+    }
+    .container
+    {
+        flex-direction: column;
+    }
+    .container .contactInfo
+    {
+        margin-bottom: 40px;
+    }
+    .container .contactInfo,
+    .contactForm
+    {
+        width: 100%;
+    }
+}
